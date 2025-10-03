@@ -1,0 +1,73 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(FB_IMG_17115636779216297.jpg) ;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background:peru;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:whitesmoke;
+}
+.menu-bar ul li{
+    width: 170px;
+    padding: 5px;
+    margin: 15px;
+}
+.menu-bar ul li a {
+text-decoration: none;
+color: white;
+}
+.active, .menu-bar ul li:hover
+{
+    background:skyblue;
+    border-radius: 100px;
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: skyblue;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover .sub-menu ul
+{ 
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu ul li {
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px dotted whitesmoke;
+    border-radius: 0%;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover
+{
+    color:red;
+}
+.sub-menu-1{
+    display: none;
+    position: absolute;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    top:100%;
+    left: 0;
+}
